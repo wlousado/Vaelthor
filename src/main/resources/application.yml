@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: Vaelthor
+  data:
+    mongodb:
+      uri: mongodb://vaelthor:vaelthor123@localhost:27017/vaelthor_db?authSource=admin

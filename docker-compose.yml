@@ -1,0 +1,12 @@
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: vaelthor
+      MONGO_INITDB_ROOT_PASSWORD: vaelthor123
+      MONGO_INITDB_DATABASE: vaelthor_db
